@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to Play Claryssa's Blackjack</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/fancy.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="menu">
+		<a href="home.html"><img src="images/back-button.png" style="float:left; width:40px; height:40px;" alt="default pusheen"></a>
+		<img src="images/Pusheen-banner.png" style="margin-top:40px">
+		<form method="post" action="index.js" enctype="text/plain">
+
+			<h1>Change default Pusheen avatar:</h1>
+			<input type="radio" id="bread" value="bread"> Bread Pusheen<BR>
+			<input type="radio" id="leftright" value="leftright"> Left Right Pusheen<BR>
+			<input type="radio" id="pizza" value="pizza"> Pizza Pusheen<BR>
+			<input type="radio" id="computer" value="computer"> Computer Pusheen<BR>
+			</p>
+
+			<h1>Change background to:</h1>
+			<input type="radio" id="background2" value="background2"> All the Pusheens<BR>
+			<input type="radio" id="background3" value="background3"> More Pusheen<BR>
+			</p>
+			<input id="save" type="submit" value="Save" onclick="change()">
+			<input id="cancel" type="reset" value="Cancel" onclick="window.history.back()">
+		</form>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>

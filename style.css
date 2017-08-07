@@ -1,0 +1,107 @@
+@font-face {
+    font-family: armadillo;
+    src: url(fonts/a_sensible_armadillo-webfont.woff);
+}
+
+body {
+	background-image: url("images/cute.png");
+	background-repeat: repeat;
+    margin:auto;
+    padding-top:50px;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+#name {
+	display:block;
+	text-align:center;
+	font-family:armadillo;
+	font-size:50px;
+}
+
+#play, #settings {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    font-family: armadillo;
+    font-size:25px;
+    border-radius: 10px;
+
+}
+
+#start, #hit, #stay, #save, #cancel{
+    display:inline-block;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    font-family: armadillo;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu {
+    position:relative;
+    display:block;
+	background-color:#E4998C;
+	margin:100px;
+	padding: 15px 32px;
+    font-family: armadillo;
+    font-size:25px;
+}
+
+.bet, .player, .dealer {
+    /*border: 3px solid black;*/
+    padding: 10px;
+    width: 300px;
+    display:inline-block;
+}
+
+.dScore, .pScore {
+    display:block;
+    margin-top: 40px;
+}
+
+.bet{
+    float:right;
+}
+
+#dealer, #player{
+    width: 1000px;
+    display:block;
+    top:-100px;
+
+}
+
+#bet {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  font-family: armadillo;
+  font-size: 30px;
+}
+
+.buttons {
+    text-align:center;
+}
+
+h2 {
+    margin: 0 auto;
+}

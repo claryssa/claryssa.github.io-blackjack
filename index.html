@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Claryssa's Blackjack</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/fancy.png"/>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+	</head>
+	<body>
+		<div class="menu">
+			<a href="home.html">
+				<img src="images/back-button.png" style="float:left; width:40px; height:40px;">
+			</a>
+
+			<div class="bet">
+				<form action="/action_page.php">
+					<input type="number" name="bet" placeholder="Enter bet here" step="10" id="bet" required>
+				</form>
+				<h2 id="earnings" style="margin: 0 auto; margin-top:30px;">Total Earnings: $</h2>
+				<div class="buttons" style="margin: 0 auto; margin-top:30px;">
+					<input type="button" value="Start" onclick="start();" id="start">
+					<input type="button" value="Hit" onclick="hit();" id="hit">
+					<input type="button" value="Stay" onclick="stay();" id="stay">
+				</div>
+				<br>
+				<h2 id="status" style="text-align:center"></h2>
+			</div>
+
+			<img id="pusheen" src="images/fancy.png">
+			<h1 style="margin-bottom:0px">Claryssa's Blackjack</h1>
+			
+			<div class="cards">
+				<div class="dealer">
+					<h2 id="dealer"></h2>
+					<img src="" id="dcard1" style="float: left; width: 30%; margin-right: 2%;">
+					<img src="" id="dcard2" style="float: left; width: 30%; margin-right: 2%;">
+					<img src="" id="dcard3" style="float: left; width: 30%; margin-right: 2%;">
+					<h2 id="dScore" style="margin-top:135px">Dealer Score:</h2>
+				</div> 
+
+				<div class="player" style="float:right">
+					<h2 id="player"></h2>
+					<img src="" id="pcard1" style="float: left; width: 30%; margin-right: 2%;">
+					<img src="" id="pcard2" style="float: left; width: 30%; margin-right: 2%;">
+					<img src="" id="pcard3" style="float: left; width: 30%; margin-right: 2%;">
+					<h2 id="pScore" style="margin-top:135px">My Score:</h2>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
+
+
+<!-- Create an array of objects for card images
+cards = [
+  1 = {
+    img = "img.jpg",
+    val = 1
+  }
+  heart2 = 
+]
